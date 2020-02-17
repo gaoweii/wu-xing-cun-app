@@ -60,7 +60,7 @@ const prePage = ()=>{
 Vue.config.productionTip = false
 Vue.prototype.$fire = new Vue();
 Vue.prototype.$store = store;
-Vue.prototype.$api = {msg, json, prePage};
+Vue.prototype.$api = {msg, json, prePage, http};
 
 App.mpType = 'app'
 

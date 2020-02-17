@@ -9,7 +9,7 @@
 				<view class="u-box">
 					<text class="name">{{item.name}}</text>
 					<text class="mobile">{{item.mobile}}</text>
-				</view>
+				</view>zA
 			</view>
 			<text class="yticon icon-bianji" @click.stop="addAddress('edit', item)"></text>
 		</view>
