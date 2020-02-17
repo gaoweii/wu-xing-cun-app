@@ -30,14 +30,14 @@
 			<image src="/static/temp/ad1.jpg" mode="scaleToFill"></image>
 		</view>
 		<view class="card">
-			<view class="card-1">
-				
+			<view class="cardPublic card-1">
+				<view class="card-text">附近美食</view>
 			</view>
-			<view class="card-2">
-				
+			<view class="card-2 cardPublic">
+				<view class="card-text">酒店民宿</view>
 			</view>
-			<view class="card-3">
-				
+			<view class="card-3 cardPublic">
+				<view class="card-text">本地特产</view>
 			</view>
 		</view>
 		
@@ -421,6 +421,32 @@
 			line-height: 1;
 		}
 	}
-	
+	.card{
+		padding: 20rpx;
+		.card-1{
+			background-color: #4399FC;
+		}
+		
+		.card-2{
+			background-color: #4CD964;
+		}
+		
+		.card-3{
+			background-color: #FA436A;
+		}
+		
+		.cardPublic{
+			border-radius: 30rpx;
+			margin-top: 60rpx;
+			height: 300rpx;
+			box-shadow: 10px 10px 5px #DCDFE6;
+		}
+		.card-text{
+			text-align: center;
+			position: relative;
+			top: 40%;
+			font-family: "宋体";
+		}
+	}
 
 </style>
