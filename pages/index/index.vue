@@ -95,13 +95,40 @@
 			 * 请求静态数据只是为了代码不那么乱
 			 * 分次请求未作整合
 			 */
+			/* 手动转化base64为图片太麻烦 */
+			/* arrayBufferToBase64: function(buffer) { 
+				var binary = "";
+				var bytes = new Uint8Array(buffer);
+				var len = bytes.byteLength;
+				for (var i = 0; i < len; ++i) {
+					binary += String.fromCharCode(bytes[i]);
+				}
+				
+			}, */
+			
 			async loadData() {
 				let that = this;
 				let carouselList = await this.$api.json('carouselList');
+				
+				let goodsList = await this.$api.json('goodsList');
+				/* 暂时写为这种形式,主要是测试前后端数据的接收问题后期应封装为统一的函数，并且这里还没有针对异步请求做处理 */
+				uni.request({ 
+					url:"http://192.168.0.104:7000/index/carouselList",
+					method:"POST",
+					success: (res)=> {
+						console.log(res.data);
+						for(var i = 0; i < 3; ++i) {
+							let bkColors = res.data.carousels[i].backgroundColor;
+							let image = res.data.carousels[i].image;
+							that.carouselList[i].background = "rgb("+bkColors.red.toString()+","+bkColors.green.toString()+","+bkColors.blue.toString()+")"
+							that.carouselList[i].src=image;
+						}
+					}
+				});
+				/* let carouselList = this.carouselList; */
 				this.titleNViewBackground = carouselList[0].background;
 				this.swiperLength = carouselList.length;
 				this.carouselList = carouselList;
-				let goodsList = await this.$api.json('goodsList');
 				this.goodsList = goodsList || [];
 			},
 			//轮播图切换修改背景色
