@@ -27,7 +27,7 @@
 		</view>
 		<!-- 分类 -->	
 		<view class="ad-1">
-			<image src="/static/temp/ad1.jpg" mode="scaleToFill"></image>
+			<image v-bind:src="adSrc" mode="scaleToFill"></image>
 		</view>
 		<view class="card">
 			<view class="cardPublic card-1">
@@ -83,7 +83,8 @@
 				swiperCurrent: 0,
 				swiperLength: 0,
 				carouselList: [],
-				goodsList: []
+				goodsList: [],
+				adSrc: this.$api.addr + "/index/ad"
 			};
 		},
 
@@ -111,8 +112,26 @@
 				let carouselList = await this.$api.json('carouselList');
 				
 				let goodsList = await this.$api.json('goodsList');
+				
+				var option = {
+					method:"POST",
+					url:this.$api.addr + "/index/carouselList",
+					data:""
+				};
+				
+				/* 使用封装好的api */
+				let res = await this.$api.http(option);
+				
+				for(var i = 0; i < 3; ++i) {
+					let bkColors = res.carousels[i].backgroundColor;
+					let image = res.carousels[i].image;
+					carouselList[i].background = "rgb("+bkColors.red.toString()+","+bkColors.green.toString()+","+bkColors.blue.toString()+")"
+					carouselList[i].src=image;
+				}
+				
+				
 				/* 暂时写为这种形式,主要是测试前后端数据的接收问题后期应封装为统一的函数，并且这里还没有针对异步请求做处理 */
-				uni.request({ 
+				/* uni.request({ 
 					url:"http://192.168.0.104:7000/index/carouselList",
 					method:"POST",
 					success: (res)=> {
@@ -124,7 +143,7 @@
 							that.carouselList[i].src=image;
 						}
 					}
-				});
+				}); */
 				/* let carouselList = this.carouselList; */
 				this.titleNViewBackground = carouselList[0].background;
 				this.swiperLength = carouselList.length;

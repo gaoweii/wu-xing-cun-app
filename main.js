@@ -47,6 +47,8 @@ const http = (options) => {
 	})
 }
 
+const addr = "http://192.168.0.104:7000"
+
 const prePage = ()=>{
 	let pages = getCurrentPages();
 	let prePage = pages[pages.length - 2];
@@ -60,7 +62,7 @@ const prePage = ()=>{
 Vue.config.productionTip = false
 Vue.prototype.$fire = new Vue();
 Vue.prototype.$store = store;
-Vue.prototype.$api = {msg, json, prePage, http};
+Vue.prototype.$api = {msg, json, prePage, http, addr};
 
 App.mpType = 'app'
 
