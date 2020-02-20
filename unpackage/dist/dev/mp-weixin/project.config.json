@@ -9,7 +9,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
 	"appid": "touristappid",
-	"projectname": "电商模板 更新下单流程、分类、列表",
+	"projectname": "%E7%94%B5%E5%95%86%E6%A8%A1%E6%9D%BF%20%E6%9B%B4%E6%96%B0%E4%B8%8B%E5%8D%95%E6%B5%81%E7%A8%8B%E3%80%81%E5%88%86%E7%B1%BB%E3%80%81%E5%88%97%E8%A1%A8",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {

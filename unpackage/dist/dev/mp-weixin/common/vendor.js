@@ -7520,9 +7520,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!********************************************************!*\
-  !*** C:/Users/Gao/Downloads/mix-mall_1.0.7/pages.json ***!
-  \********************************************************/
+/*!*************************************************************************!*\
+  !*** C:/Users/Gao/Documents/wu-xing-cun-app/wu-xing-cun-app/pages.json ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8427,20 +8427,20 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 
 /***/ }),
 /* 7 */
-/*!*************************************************************************!*\
-  !*** C:/Users/Gao/Downloads/mix-mall_1.0.7/pages.json?{"type":"style"} ***!
-  \*************************************************************************/
+/*!******************************************************************************************!*\
+  !*** C:/Users/Gao/Documents/wu-xing-cun-app/wu-xing-cun-app/pages.json?{"type":"style"} ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "Dloud商城" }, "pages/product/product": { "navigationBarTitleText": "详情展示" }, "pages/set/set": { "navigationBarTitleText": "设置" }, "pages/userinfo/userinfo": { "navigationBarTitleText": "修改资料" }, "pages/cart/cart": { "navigationBarTitleText": "购物车" }, "pages/public/login": { "navigationBarTitleText": "", "navigationStyle": "custom" }, "pages/user/user": { "navigationBarTitleText": "我的", "navigationStyle": "custom" }, "pages/detail/detail": { "navigationBarTitleText": "" }, "pages/order/order": { "navigationBarTitleText": "我的订单" }, "pages/money/money": {}, "pages/order/createOrder": { "navigationBarTitleText": "创建订单" }, "pages/address/address": { "navigationBarTitleText": "收货地址" }, "pages/address/addressManage": { "navigationBarTitleText": "" }, "pages/money/pay": { "navigationBarTitleText": "支付" }, "pages/money/paySuccess": { "navigationBarTitleText": "支付成功" }, "pages/notice/notice": { "navigationBarTitleText": "通知" }, "pages/category/category": { "navigationBarTitleText": "分类" }, "pages/product/list": { "enablePullDownRefresh": true, "navigationBarTitleText": "商品列表" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#FFFFFF", "backgroundColor": "#f8f8f8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "Dloud商城", "usingComponents": {} }, "pages/product/product": { "navigationBarTitleText": "详情展示", "usingComponents": { "share": "/components/share" } }, "pages/set/set": { "navigationBarTitleText": "设置", "usingComponents": {} }, "pages/userinfo/userinfo": { "navigationBarTitleText": "修改资料", "usingComponents": {} }, "pages/cart/cart": { "navigationBarTitleText": "购物车", "usingComponents": { "uni-number-box": "/components/uni-number-box" } }, "pages/public/login": { "navigationBarTitleText": "", "navigationStyle": "custom", "usingComponents": {} }, "pages/user/user": { "navigationBarTitleText": "我的", "navigationStyle": "custom", "usingComponents": { "list-cell": "/components/mix-list-cell" } }, "pages/detail/detail": { "navigationBarTitleText": "", "usingComponents": { "share": "/components/share" } }, "pages/order/order": { "navigationBarTitleText": "我的订单", "usingComponents": { "uni-load-more": "/components/uni-load-more/uni-load-more", "empty": "/components/empty" } }, "pages/money/money": { "usingComponents": {} }, "pages/order/createOrder": { "navigationBarTitleText": "创建订单", "usingComponents": {} }, "pages/address/address": { "navigationBarTitleText": "收货地址", "usingComponents": {} }, "pages/address/addressManage": { "navigationBarTitleText": "", "usingComponents": {} }, "pages/money/pay": { "navigationBarTitleText": "支付", "usingComponents": {} }, "pages/money/paySuccess": { "navigationBarTitleText": "支付成功", "usingComponents": {} }, "pages/notice/notice": { "navigationBarTitleText": "通知", "usingComponents": {} }, "pages/category/category": { "navigationBarTitleText": "分类", "usingComponents": {} }, "pages/product/list": { "enablePullDownRefresh": true, "navigationBarTitleText": "商品列表", "usingComponents": { "uni-load-more": "/components/uni-load-more/uni-load-more" } }, "scenicarea/scenicarea": { "navigationBarBackgroundColor": "#303133", "navigationBarTitleText": "图片", "navigationBarTextStyle": "white", "backgroundColor": "#303133", "usingComponents": {} }, "pages/scenicarea/scenicarea": { "navigationBarBackgroundColor": "#303133", "navigationBarTitleText": "图片", "navigationBarTextStyle": "white", "backgroundColor": "#303133" } }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#FFFFFF", "backgroundColor": "#f8f8f8" } };exports.default = _default;
 
 /***/ }),
 /* 8 */
-/*!************************************************************************!*\
-  !*** C:/Users/Gao/Downloads/mix-mall_1.0.7/pages.json?{"type":"stat"} ***!
-  \************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** C:/Users/Gao/Documents/wu-xing-cun-app/wu-xing-cun-app/pages.json?{"type":"stat"} ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8449,9 +8449,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 9 */
-/*!************************************************************!*\
-  !*** C:/Users/Gao/Downloads/mix-mall_1.0.7/store/index.js ***!
-  \************************************************************/
+/*!*****************************************************************************!*\
+  !*** C:/Users/Gao/Documents/wu-xing-cun-app/wu-xing-cun-app/store/index.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9556,9 +9556,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 17 */
-/*!*****************************************************!*\
-  !*** C:/Users/Gao/Downloads/mix-mall_1.0.7/Json.js ***!
-  \*****************************************************/
+/*!**********************************************************************!*\
+  !*** C:/Users/Gao/Documents/wu-xing-cun-app/wu-xing-cun-app/Json.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

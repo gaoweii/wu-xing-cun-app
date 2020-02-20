@@ -177,6 +177,24 @@
 				"navigationBarTitleText": "商品列表"
 			}
         }
+        ,{
+            "path" : "pages/scenicarea/scenicarea",
+            "style" : {
+				"navigationBarBackgroundColor":"#303133",
+				"navigationBarTitleText":"图片",
+				"navigationBarTextStyle":"white",
+				"backgroundColor":"#303133"
+			}
+        }
+        ,{
+            "path" : "pages/scenicarea/comment/comment",
+            "style" : {
+				"navigationBarBackgroundColor":"#303133",
+				"navigationBarTitleText":"评论",
+				"navigationBarTextStyle":"white",
+				"backgroundColor":"#303133"
+			}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

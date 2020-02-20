@@ -110,7 +110,6 @@
 			async loadData() {
 				let that = this;
 				let carouselList = await this.$api.json('carouselList');
-				
 				let goodsList = await this.$api.json('goodsList');
 				
 				var option = {
@@ -144,7 +143,6 @@
 						}
 					}
 				}); */
-				/* let carouselList = this.carouselList; */
 				this.titleNViewBackground = carouselList[0].background;
 				this.swiperLength = carouselList.length;
 				this.carouselList = carouselList;
@@ -496,7 +494,7 @@
 			top: 40%;
 			font-family: "圆体";
 			color: #F5F5F5;
-			width: 150rpx;
+			width: 175rpx;
 			height: 30rpx;
 			float: right;
 			margin-top: 15%;
