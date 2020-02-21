@@ -122,35 +122,85 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var bwSwiper = function bwSwiper() {return __webpack_require__.e(/*! import() | wxcomponents/bw-swiper/bw-swiper */ "wxcomponents/bw-swiper/bw-swiper").then(__webpack_require__.bind(null, /*! @/wxcomponents/bw-swiper/bw-swiper.vue */ 212));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {
   data: function data() {
     return {
+      pageChange: false,
+      info: {
+        imgSrcs: [
+        "",
+        "",
+        ""],
 
-      imgSrc: [
-      { src: "" },
-      { src: "" },
-      { src: "" }] };
+        introduction: "" },
+
+      content: "测试数据",
+      options: {
+        method: "GET",
+        url: this.$api.addr + "/scenicarea",
+        data: {
+          id: 1 } } };
 
 
 
-  } };exports.default = _default;
+
+  },
+  onLoad: function onLoad() {
+    this.loadData();
+  },
+  components: {
+    bwSwiper: bwSwiper },
+
+  methods: {
+    changeText: function changeText() {/*当切换轮播图时触发函数, 首先判断是否有多条文本内容,有则改变文本内容,没有就不变 */
+
+    },
+
+    loadData: function () {var _loadData = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var info, i;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
+
+                  this.$api.http(this.options));case 2:info = _context.sent;
+                console.log(info);
+                for (i = 0; i < 3; ++i) {
+                  this.info.imgSrcs[i] = info.imgSrcs[i];
+                }
+                this.info.introduction = info.introduction;
+                console.log(this.info);case 7:case "end":return _context.stop();}}}, _callee, this);}));function loadData() {return _loadData.apply(this, arguments);}return loadData;}(),
+
+
+    changePage: function changePage(event) {
+      /*在文字发生滑动时触发，切换到评论列表*/
+      if (event.detail.dx > 100 && this.pageChange == false) {
+        console.log("changepage");
+        /* this.pageChange = true; */
+        uni.navigateTo({
+          url: "comment/comment" });
+
+      }
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

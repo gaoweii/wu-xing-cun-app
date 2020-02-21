@@ -285,6 +285,11 @@ var _default =
       uni.navigateTo({
         url: "/pages/product/product?id=".concat(id) });
 
+    },
+    toPage: function toPage() {
+      uni.navigateTo({
+        url: "/pages/scenicarea/scenicarea?id=1" });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

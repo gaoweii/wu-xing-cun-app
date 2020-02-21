@@ -15,11 +15,6 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		<!-- <view>
-			<bw-img-upload style="width:100%" ></bw-img-upload>
-			        <bw-swiper :swiperList="imgSrcs" style="width:100%" :imageKey="imgSrcs[0]"></bw-swiper>
-		</view> -->
-		
 	</view>
 </template>
 
@@ -73,7 +68,7 @@
 			},
 			changePage: function(event) {
 				/*在文字发生滑动时触发，切换到评论列表*/
-				if(event.detail.dx > 200 && this.pageChange == false) {
+				if(event.detail.dx > 100 && this.pageChange == false) {
 					console.log("changepage")
 					/* this.pageChange = true; */
 					uni.navigateTo({
@@ -101,14 +96,13 @@
 	}
 	.image{
 		height: 35vh;
-		width: 100vw;
+		width: 98vw;
 		margin-top: 7vh;
 	}
 	.textarea{
 		height: 25vh;
-		border-color: #4399FC;
-		border-style: solid;
-		border-width: 2rpx;
+		/* border-color: #4399FC;
+		border-style: solid; */
 		.text{
 			width: 100vw;
 			height: 100vh;

@@ -18,7 +18,8 @@
     "pages/notice/notice",
     "pages/category/category",
     "pages/product/list",
-    "pages/scenicarea/scenicarea"
+    "pages/scenicarea/scenicarea",
+    "pages/scenicarea/comment/comment"
   ],
   "subPackages": [],
   "window": {

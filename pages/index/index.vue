@@ -27,7 +27,7 @@
 		</view>
 		<!-- 分类 -->	
 		<view class="ad-1">
-			<image v-bind:src="adSrc" mode="scaleToFill"></image>
+			<image v-bind:src="adSrc" mode="scaleToFill" @click="toPage"></image>
 		</view>
 		<view class="card">
 			<view class="cardPublic card-1">
@@ -162,6 +162,11 @@
 					url: `/pages/product/product?id=${id}`
 				})
 			},
+			toPage() {
+				uni.navigateTo({
+					url: "/pages/scenicarea/scenicarea?id=1"
+				})
+			}
 		},
 		// #ifndef MP
 		// 标题栏input搜索框点击
