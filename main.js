@@ -47,7 +47,7 @@ const http = (options) => {
 	})
 }
 
-const addr = "http://192.168.0.104:7000"
+const addr = "http://192.168.0.100:7000"
 
 const prePage = ()=>{
 	let pages = getCurrentPages();

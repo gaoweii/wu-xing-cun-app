@@ -12,6 +12,7 @@
 			<swiper class="textarea" @transition="changePage">
 				<swiper-item>
 					<view class="text" v-model="info.introduction">{{info.introduction}}</view>
+					
 				</swiper-item>
 			</swiper>
 		</view>
